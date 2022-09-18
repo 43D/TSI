@@ -2,10 +2,13 @@ package br.edu.utfpr.td.tsi.sistema.bancario.clientes.negocio;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import br.edu.utfpr.td.tsi.sistema.bancario.clientes.dao.InMemoriaClienteDAO;
 import br.edu.utfpr.td.tsi.sistema.bancario.clientes.dominio.Cliente;
 import br.edu.utfpr.td.tsi.sistema.bancario.clientes.dominio.DadosAcesso;
 
+@Component
 public class GerenciadorClientes implements RegrasClientes{
 	
 	InMemoriaClienteDAO clienteDAO = new InMemoriaClienteDAO();

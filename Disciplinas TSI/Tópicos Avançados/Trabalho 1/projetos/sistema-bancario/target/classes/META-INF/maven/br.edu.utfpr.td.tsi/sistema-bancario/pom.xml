@@ -27,6 +27,11 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>br.edu.utfpr.td.tsi</groupId>
 			<artifactId>sistema-bancario-conta-corrente</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -53,6 +58,7 @@
 	</dependencies>
 
 	<build>
+		<defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
